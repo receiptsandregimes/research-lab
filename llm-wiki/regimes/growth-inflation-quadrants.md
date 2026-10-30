@@ -145,5 +145,6 @@ percentage points, not wholesale rotations.
 ## See also
 
 - [Asset performance by quadrant](asset-performance-by-quadrant.md) —
-  which assets win where, with per-claim attribution and Man Group's
-  empirical findings
+  which assets win where, with per-claim attribution and Man Group's empirical findings
+- [When Bonds Fail, What To Own Instead](when-bonds-fail.md) —
+  synthesis: the inflation quadrants through the bond lens

@@ -75,3 +75,11 @@ changed and why, not file diffs.
   page, but the page's embedded metadata says first published
   2024-02-15. Left as-is for now.
 
+
+## [2026-10-30] archive | When Bonds Fail, What To Own Instead
+- Filed query answer as synthesis page regimes/when-bonds-fail.md,
+  connecting the quadrant framework and the per-quadrant performance
+  reference: bonds lose when inflation rises (reflation, stagflation);
+  per-regime alternatives; Man Group's evidence bonds shield only about
+  half of equity bear markets. Cascade: See-also links added to both
+  cited pages.

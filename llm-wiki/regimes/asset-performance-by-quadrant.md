@@ -118,3 +118,4 @@ Swoopr), and the gap to Gavekal primary documents has been widened.
 ## See also
 
 - [The Growth × Inflation Four-Quadrant Framework](growth-inflation-quadrants.md) — definitions, naming map, origin history, detection methods
+- [When Bonds Fail, What To Own Instead](when-bonds-fail.md) — synthesis: the inflation quadrants through the bond lens
