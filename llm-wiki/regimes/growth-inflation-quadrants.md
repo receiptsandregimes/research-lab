@@ -40,18 +40,30 @@ only *one* of the four regimes — disinflationary boom).
 
 Naming varies by source; the map below reconciles them.
 
-| Growth | Inflation | Common name | Gavekal name | Common era example |
+| Growth | Inflation | Common name | Gavekal name | Era example (as cited in our sources) |
 | --- | --- | --- | --- | --- |
-| Rising | Falling | **Goldilocks** | Disinflationary boom | 1981–2000 (US) |
-| Rising | Rising | **Reflation** | Inflationary boom | 2003–mid 2008 |
-| Falling | Rising | **Stagflation** | Inflationary bust | 1973–75, 2022 |
-| Falling | Falling | **Deflation** / bust | Deflationary bust | 2008 crisis, Great Depression |
+| Rising | Falling | **Goldilocks** | Deflationary boom | 1981–2000 (ReSolve: disinflationary growth period) |
+| Rising | Rising | **Reflation** | Inflationary boom | 2003–mid 2008 (ReSolve) |
+| Falling | Rising | **Stagflation** | Inflationary bust | *(none cited in our sources)* |
+| Falling | Falling | **Deflation** / bust | Deflationary bust | Great Depression (ReSolve) |
 
 - Man Group splits each axis into four states instead of two
   (e.g. inflation: FIRE, REFLATION, DISINFLATION, ICE; growth:
   BOOM, RECOVERY, SLUMP, RECESSION with NBER recessions as baseline).
 - Bridgewater (Dalio) insists the axes are about **surprises relative
   to what's priced in**, not raw direction — see below.
+
+### Correction 2026-10-30 (same-day QA): era examples were unsourced
+
+The first version of the table listed "1973–75, 2022" (stagflation) and
+"2008 crisis" (deflation) as era examples, and called Goldilocks's
+Gavekal name "Disinflationary boom." Neither holds up against the
+registered sources: the specific era examples appear in **none** of the
+five articles (plausible, but unciteable — era windows matter if we ever
+test a detector, so they shouldn't be invented), and the
+disinflationary-boom term is **ReSolve's**; our registered Gave-relaying
+source (portfoliooptimizer.io) writes "Deflationary Boom." The era
+column now lists only eras the sources actually name.
 
 ## Where it came from
 

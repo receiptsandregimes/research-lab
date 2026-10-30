@@ -31,22 +31,27 @@ directionally; we hold no numbers of our own yet).
 | **Stagflation** (growth ↓, inflation ↑) | Commodity-linked assets (energy stocks, materials), inflation-linked bonds, real assets, gold, cash, short duration *(both sides of a 60/40 can lose simultaneously)* | Equities broadly; nominal bonds — the regime that breaks 60/40 |
 | **Deflation** (growth ↓, inflation ↓) | Long-duration government bonds (Man Group: "ALWAYS worked in deflationary environments"), quality/defensive equities (utilities, staples, healthcare), cash, gold in severe deflation + financial stress *(ReSolve: gold serves as authorities print to fight deflation)* | Cyclicals; commodities |
 
-Consensus across all four directional sources (Bridgewater, ReSolve,
-Swoopr, Gavekal): stocks and nominal bonds both lose in stagflation —
-that's the quadrant traditional portfolios are built to ignore.
+Consensus across the three registered sources with verifiable asset
+claims (Bridgewater, ReSolve, Swoopr): stocks and nominal bonds both
+lose in stagflation — that's the quadrant traditional portfolios are
+built to ignore. *(Gavekal's stance can't be verified: our only
+registered Gave source makes no asset claims — see Known gaps.)*
 
 ## Why each asset behaves this way
 
 Structural mechanics (ReSolve, "Structural Diversification for All
-Seasones") — the behavior is embedded in pricing math, not sentiment:
+Seasons") — the behavior is embedded in pricing math, not sentiment:
 
 - **Nominal bonds**: price moves opposite rates; rates track inflation
   expectations. Falling inflation → falling rates → rising bond prices.
   Coupons can outweigh price declines in mildly inflationary times.
 - **T-bills / cash**: preserves value when inflation is falling;
-  T-bills hedge *both* inflation surprises and slowing growth in
-  Bridgewater's framing — ReSolve gives cash a large weight partly for
-  this dual role.
+  T-bills hedge *both* inflation and slowing growth in ReSolve's framing
+  ("T-bills hedge against both inflation and slowing growth, which
+  validates their relatively large allocation") — hence their combined
+  32% of the structurally diversified portfolio. *(Correction, same-day
+  QA: the first version credited this to Bridgewater's framing — but the
+  All Weather PDF never mentions T-bills; the claim is ReSolve's.)*
 - **Equities**: driven above all by *growth* (earnings, book value
   growth), secondarily by inflation expectations (discount rate, input
   costs, margins).
@@ -91,11 +96,24 @@ Key findings that qualify the table above:
   article text) but they're proprietary.
 - The Gavekal quadrant-specific asset map (in *The General Theory of
   Portfolio Construction*, and in Gave's "Four Quadrants: A Wicksellian
-  Analysis") is only relayed secondhand in our sources (Brian Pate
-  overview, portfoliooptimizer.io) — primary Gavekal documents not yet
-  registered.
+  Analysis") is **not relayed by any registered source** — the
+  portfoliooptimizer.io page gives only quadrant definitions and the two
+  detector ratios. Primary Gavekal documents not yet registered.
 - 2026+ history (AI-productivity boom, post-2022 inflation episode)
   hasn't been quadrant-classified in our sources.
+
+### Correction 2026-10-30 (same-day QA): secondhand-Gavekal claims overstated
+
+The first version of this page claimed the Gavekal asset map was
+"relay[ed] secondhand in our sources (Brian Pate overview,
+portfoliooptimizer.io)" and used that to count Gavekal in the
+stagflation consensus across "all four" directional sources. Both parts
+were wrong against the source texts: portfoliooptimizer.io contains
+only quadrant definitions and the two detector ratios — no asset map —
+and the "Brian Pate overview" was never registered as a source. The
+affected claims have been fixed: the consensus is now stated across the
+three sources with verifiable asset claims (Bridgewater, ReSolve,
+Swoopr), and the gap to Gavekal primary documents has been widened.
 
 ## See also
 

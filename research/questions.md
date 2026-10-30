@@ -14,7 +14,7 @@ Format per entry:
 
 ## Next (queued, not started)
 
-*(none yet)*
+- **[2026-10-30] For a live quadrant detector: raw direction or expectation gaps?** Should the growth/inflation axes be measured by level/direction (accelerating vs. decelerating — Gave's ratios, ReSolve's framing) or by surprise vs. what is priced in (Dalio's principle — harder to operationalize)? — confidence: low (the surprise side rests on one source stating a principle, not a recipe) — why it matters: any detection rule, and therefore any backtest of a quadrant tilt, depends on this choice; picking wrong invalidates the regime labels — status: queued; definitions and sources on the wiki page ([regimes/growth-inflation-quadrants.md](../llm-wiki/regimes/growth-inflation-quadrants.md))
 
 ## Resolved
 
