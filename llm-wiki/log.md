@@ -23,3 +23,23 @@ changed and why, not file diffs.
   overview (plain modern map; weakest source).
 - Open question for compile: level-vs-surprise definition of the axes.
 - All registered by URL (stable, public); nothing copied. Compile pending.
+
+## [2026-10-30] compile | Growth × inflation four-quadrants framework (5 sources → 2 pages)
+- First compile. Created `regimes/growth-inflation-quadrants.md`
+  (concept: two axes, four regimes, naming map across Gavekal/Man/
+  Bridgewater vocabularies; origin history Gave 1978 → Browne 1982 →
+  Dalio 1996; detection via Gave's energy-efficiency and
+  currency-debasement ratios vs indicator lists) and
+  `regimes/asset-performance-by-quadrant.md` (reference: per-quadrant
+  favored/avoided assets with structural mechanics per ReSolve, plus
+  Man Group's empirical fine print — their "always worked" findings,
+  the stagflation-breaks-60/40 consensus, and the value-spray myth).
+- Central definitional conflict flagged as open question and annotated
+  in the concept page: level/direction (Gave, ReSolve, Swoopr) vs
+  expectation-surprise (Bridgewater) axis definitions. Unresolved;
+  must be settled before any live detector is built.
+- Known-gaps section names what the sources DON'T give us (no
+  precision numbers for backtesting a tilt; Gavekal primary docs
+  secondhand only).
+- Updated: index.md (regimes section now live; first pages in wiki).
+
