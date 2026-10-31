@@ -83,3 +83,23 @@ changed and why, not file diffs.
   per-regime alternatives; Man Group's evidence bonds shield only about
   half of equity bear markets. Cascade: See-also links added to both
   cited pages.
+
+## [2026-10-31] register | Commodities for the Long Run (5 sources)
+- Registered AQR's long-run commodities paper in both versions plus its
+  public dataset pages: NBER Working Paper 22793 (November 2016, Levine/
+  Ooi/Richardson — full 40-page PDF fetched), the published FAJ article
+  (registered by DOI; the publisher page returned "access denied", so the
+  journal full text was NOT fetched), the CFA Institute Research and
+  Policy Center landing page (relays the published abstract; JSON-LD
+  datePublished 2018-04-02), AQR's own journal-article page (abstract,
+  April 30 2018, four authors incl. Caroline Sasseville), and AQR's two
+  dataset pages (monthly-updated index level data; original paper data
+  through December 2015).
+- Dataset spreadsheets referenced by URL only, not copied into
+  raw-sources/ — AQR/author copyright, fails the schema's redistribution
+  test.
+- Date metadata discrepancy captured at register time: the same article is
+  dated 2 April 2018 (CFA page), April 30, 2018 (AQR page), and vol 74(2),
+  pages 55-68 (NBER's citation of it). Left unreconciled; cite the edition
+  actually read.
+

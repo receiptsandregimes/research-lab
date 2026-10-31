@@ -11,11 +11,16 @@ material we may redistribute is copied here.
 | https://www.man.com/insights/road-ahead-regime-based-investing | man-regime-based-investing | regimes |
 | https://investresolve.com/dynamic-asset-allocation-for-practitioners-part-i-policy-portfolios/ | resolve-structural-diversification | regimes, risk |
 | https://www.getswoopr.com/research/market-regime-cross-asset/growth-inflation-regime-framework/ | swoopr-growth-inflation-quadrants | regimes |
+| https://rpc.cfainstitute.org/research/financial-analysts-journal/2018/faj-v74-n2-4 | faj-2018-abstract-cfa-rpc | regimes |
 
 ## papers/
 | path/url | slug | topics |
 | --- | --- | --- |
 | https://www.bridgewater.com/resources/all-weather-story.pdf | bridgewater-all-weather-story | regimes, risk |
+| https://www.nber.org/system/files/working_papers/w22793/w22793.pdf | levine-ooi-richardson-2016-nber-w22793 | regimes |
+| https://doi.org/10.2469/faj.v74.n2.4 | levine-ooi-richardson-sasseville-2018-faj | regimes |
+| https://www.aqr.com/Insights/Datasets/Commodities-for-the-Long-Run-Index-Level-Data-Monthly | aqr-commodities-long-run-data-monthly | regimes |
+| https://www.aqr.com/Insights/Datasets/Commodities-for-the-Long-Run-Original-Paper-Data | aqr-commodities-long-run-data-original | regimes |
 
 ## transcripts/
 *(none)*
