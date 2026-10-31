@@ -148,3 +148,5 @@ percentage points, not wholesale rotations.
   which assets win where, with per-claim attribution and Man Group's empirical findings
 - [When Bonds Fail, What To Own Instead](when-bonds-fail.md) —
   synthesis: the inflation quadrants through the bond lens
+- [Commodities for the Long Run (AQR, 1877–2015)](commodities-for-the-long-run.md) —
+  the 139-year inflation/growth state table behind the hot quadrants

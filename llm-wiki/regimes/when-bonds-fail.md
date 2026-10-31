@@ -83,3 +83,4 @@ the shock's own sign.
 
 - [The Growth × Inflation Four-Quadrant Framework](growth-inflation-quadrants.md) — quadrant definitions, naming map, detection methods
 - [Asset Performance by Growth × Inflation Quadrant](asset-performance-by-quadrant.md) — the full quadrant table this page zooms into
+- [Commodities for the Long Run (AQR, 1877–2015)](commodities-for-the-long-run.md) — commodity futures Sharpe −0.27 in low-inflation states and mean return −7.4% in recessions; the case for the commodity alternative, with its own flat spots

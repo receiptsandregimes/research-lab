@@ -103,3 +103,56 @@ changed and why, not file diffs.
   pages 55-68 (NBER's citation of it). Left unreconciled; cite the edition
   actually read.
 
+## [2026-10-31] ingest | Commodities for the Long Run (AQR, 1877–2015)
+- Compiled regimes/commodities-for-the-long-run.md. Verified claims against
+  the fetched working-paper text (each quoted phrase and number grepped in
+  the PDF extraction) and the fetched relay pages for the published
+  abstract.
+- New knowledge: the commodity premium splits by driver. Backwardation
+  pays through carry (adjusted carry 12.2% vs −3.6%, while excess spot is
+  *lower* in backwardation, −2.9% vs 6.5%); inflation pays through spot
+  (10.4% vs −5.8%, with essentially the same index volatility in both
+  states). Also the paper's own limits: not equity-like returns, carry —
+  much of it the short rate — the bigger historical contributor, only 8%
+  R-squared for the monthly state regression, and the equal-weighted
+  index's investability objection.
+- Primary verification (ours, not the sources'), stated as confidence:
+  high on the page: AQR's monthly dataset has stopped updating. Live file
+  ends 2025-05-30 with Last-Modified 2025-06-21 (same header on a
+  cache-busting request); 1,780 monthly rows 1877-02-28 → 2025-05-30 with
+  no gaps or duplicate months; Internet Archive copies of the page from
+  2025-09-14, 2026-02-09 and 2026-05-11 all still display "May 30, 2025";
+  control test on AQR's Momentum Indices Monthly shows Last-Modified
+  2026-10-05 with September 2026 data, so AQR is updating other datasets
+  and this one has been quiet ~17 months. Consequence for any future work:
+  May 2025 is the hard end of the public sample, and the file is
+  index-level only (11 columns), so the portfolios cannot be rebuilt from it.
+- Unverifiable and excluded: the 2018 journal full text (publisher 403).
+  Two published-version sentences about returns conditional on curve shape
+  appeared in search snippets but do not grep in any fetched copy — left
+  off the page rather than cited secondhand.
+- Extraction caveat recorded on the page: the PDF-to-text dump splits some
+  words ("commodit y", "14. 8%"), so quote checks need a space-tolerant
+  grep.
+- Cascade: See-also links added to growth-inflation-quadrants.md,
+  asset-performance-by-quadrant.md and when-bonds-fail.md. The
+  asset-performance "no source gives returns precise enough to backtest a
+  tilt" gap is now **marked** partially superseded (kept, not deleted, per
+  the never-delete rule) — AQR does give single-state numbers, still not a
+  two-axis quadrant cross.
+- Confidence: medium on the paper's evidence (single research team; the
+  paper discloses that AQR "offers financial products that invest in
+  commodities"); high on the dataset-status section (primary check).
+- Updated: index.md (fourth page in regimes/).
+- Self-check (mechanical, same session): every quoted span (39) and every
+  numeric token in the paper sections (100) was matched against the
+  fetched source text with whitespace-insensitive matching. All matched
+  except the two documented extraction artifacts and the AQR-page/dataset
+  figures, which match the fetched AQR pages or our own file inspection.
+  Two fixes made in place before any commit, so no `### Correction:`
+  block was needed: (a) the −0.27 low-inflation figure was first written
+  as a return on when-bonds-fail.md — it is a Sharpe ratio in the paper's
+  Sharpe passage; (b) the em-dash section heading was retitled so its
+  anchor is unambiguous under both anchor-slug conventions.
+- Lint: 0 issues across the 4 compiled pages (frontmatter, links, anchors,
+  index sync, See-also bidirectionality, Contents block, redaction sweep).

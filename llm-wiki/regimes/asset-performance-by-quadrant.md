@@ -94,6 +94,14 @@ Key findings that qualify the table above:
   reports quadrant-conditional returns with enough precision to
   backtest a tilt. Man Group has the numbers (figures not in the
   article text) but they're proprietary.
+  *(Marked 2026-10-31, partially superseded: AQR's long-run paper does
+  report precise single-state commodity returns — inflation up/down,
+  expansion/recession, backwardation/contango — see
+  [Commodities for the Long Run](commodities-for-the-long-run.md). Still
+  true: the working paper we hold reports those states separately, not as
+  a two-axis quadrant cross (and its journal full text is paywalled, so a
+  joint table there can't be ruled out), and their raw per-commodity data
+  isn't published.)*
 - The Gavekal quadrant-specific asset map (in *The General Theory of
   Portfolio Construction*, and in Gave's "Four Quadrants: A Wicksellian
   Analysis") is **not relayed by any registered source** — the
@@ -119,3 +127,4 @@ Swoopr), and the gap to Gavekal primary documents has been widened.
 
 - [The Growth × Inflation Four-Quadrant Framework](growth-inflation-quadrants.md) — definitions, naming map, origin history, detection methods
 - [When Bonds Fail, What To Own Instead](when-bonds-fail.md) — synthesis: the inflation quadrants through the bond lens
+- [Commodities for the Long Run (AQR, 1877–2015)](commodities-for-the-long-run.md) — long-run state-conditional commodity returns; the inflation premium is spot, the backwardation premium is carry
