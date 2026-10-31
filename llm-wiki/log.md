@@ -199,3 +199,61 @@ changed and why, not file diffs.
 - Updated: regimes/commodities-for-the-long-run.md (See also),
   regimes/when-bonds-fail.md (See also),
   regimes/growth-inflation-quadrants.md (See also), index.md.
+
+## [2026-10-31] fix | accuracy review of the datasets ingest — 2 P2s + 1 P3 fixed, 2 confidence upgrades
+- Independent review of the same-day datasets ingest, per the review
+  procedure: every registered source re-fetched fresh (10 dataset rows
+  plus the AQR page) and the NBER w22793 paper PDF re-fetched; the live
+  and mirror Shiller files re-downloaded and every number re-derived
+  from scratch. Verdict: the page is accurate. Of ~35 registered
+  checkable claims, all verified clean except the three fixed below.
+- Independently reproduced from the files: 1,870 gapless monthly rows
+  1871.01→2026.10 (no dups); the synthetic-bond formula match over all
+  1,869 populated months (review max diff 1.8e-15 — same "exact to
+  rounding" verdict, the sub-digit gap vs the compile's 1.6e-15 is
+  float arithmetic order); all return/vol/extreme stats (9.64/14.13 and
+  10.95/12.10 stocks; 4.85/4.29 and 5.75/6.14 bonds; extremes −8.26 and
+  +10.90); the 2026.1 date-column quirk; every verbatim quote on the
+  page (Shiller page construction notes, Damodaran title and date,
+  MeasuringWorth titles, NBER title/authors/QJE 134(3) 2019 pp.
+  1225–1298 and abstract, macrohistory R.6, AQR "May 30, 2025" dataset
+  date, "60/40" and "54/36/10" portfolio exercises and 6.7% stock excess
+  return from the paper text).
+- FRED note: fred.stlouisfed.org still does not resolve from this
+  machine; FRED claims verified via same-session search-result page
+  text — series title, "Sep 2026: 4.99", "Date Range 1953-04-01 to
+  2026-09-01", all exact.
+- P2 fixed — Yale mirror pointer drift: the stale-monthly-file facts
+  (saved 2023-09-17, 1,833 rows, data ends 2023.09) were true —
+  re-verified against the file itself at econ.yale.edu/~shiller/
+  ie_data.xls — but were credited to the data.htm page, which no
+  longer links that file (its only download today is an annual
+  1871–2016 file). The direct file URL is now registered
+  (shiller-ie-data-yale-file, added to the page's sources), and the
+  bullet carries an inline correction.
+- P2 fixed — "their papers' windows end in 2015" was verified only for
+  the RRoE paper; the macrohistory download page nowhere states an end
+  year. Claim scoped to what the sources say, with inline correction.
+- P3 fixed — the Dataverse DOI was registered uppercased
+  (10.7910/DVN/GGDQJ) and returns "Error: DOI Not Found" (DOI
+  resolution proved case-sensitive in practice this session); the
+  registry now pins the lowercase resolving form (10.7910/dvn/ggdqgj).
+  The page's Dataverse claim (dataset title, published 2019-03-26) was
+  verified exact via fresh search-result record.
+- Confidence upgrades — macrohistory.net and the MeasuringWorth
+  interest-rates page were unfetchable at compile time (claims rested
+  on search-result text, marked medium); both fetched directly during
+  the review and their quotes matched verbatim → upgraded to high,
+  upgrade marked inline on the page (and the "pending fetch" table row
+  and Known-gaps bullet updated to match). The synthetic-bond max-diff
+  figure on the page was left as-is (same magnitude, both "exact to
+  rounding").
+- Tuning loop: two new failure patterns — URL case-mangling at
+  register time, and file evidence cited to a page that no longer links
+  it — codified as new rules in the ingest procedure.
+- Bookkeeping lint: otherwise clean — index sync, bidirectional
+  See-also both directions, all cited slugs registered, no anchor
+  links used, redaction sweep clean, frontmatter valid, question board
+  untouched (no open questions created or resolved). The uncommitted
+  ingest was committed as-reviewed first (a4bfd76), then these fixes as
+  a separate fix: commit.

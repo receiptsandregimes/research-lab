@@ -2,7 +2,7 @@
 title: Long-Horizon Stock & Bond Datasets for the 60/40 Legs (U.S., 1871–Present)
 type: reference
 updated: 2026-10-31
-sources: [shiller-online-data, shiller-ie-data-yale-mirror, fred-gs10-table, fred-gs10-series, damodaran-histret-1928, measuringworth-datasets, measuringworth-interest-sources, jordà-etal-2019-rroe-nber, rroe-replication-dataverse, jst-macrohistory-db, aqr-commodities-long-run-data-monthly]
+sources: [shiller-online-data, shiller-ie-data-yale-mirror, shiller-ie-data-yale-file, fred-gs10-table, fred-gs10-series, damodaran-histret-1928, measuringworth-datasets, measuringworth-interest-sources, jordà-etal-2019-rroe-nber, rroe-replication-dataverse, jst-macrohistory-db, aqr-commodities-long-run-data-monthly]
 confidence: high
 tags: [regimes, datasets, equities, bonds, 60-40, backtesting]
 ---
@@ -46,9 +46,19 @@ Verified properties of the live file:
 - Cross-check against the official rate series: the file's September 2026
   10-year rate is **4.99**, and FRED's GS10 series page shows
   "Sep 2026: 4.99" — an exact match.
-- The Yale mirror of the file (`econ.yale.edu/~shiller/data.htm`) is
-  **stale**: file properties show last saved 2023-09-17, and its data ends
-  2023.09 (1,833 rows). Use the shillerdata.com copy.
+- The Yale mirror of the file is **stale**: file properties show last
+  saved 2023-09-17, and its data ends 2023.09 (1,833 rows) — all verified
+  against the mirror file itself, still hosted at
+  `econ.yale.edu/~shiller/ie_data.xls` (registered:
+  shiller-ie-data-yale-file). Location gotcha: Yale's data page
+  (`econ.yale.edu/~shiller/data.htm`) no longer *links* the monthly file —
+  its only download today is a different, annual file (1871–2016) — so
+  cite the direct file URL, not the page. Use the shillerdata.com copy.
+  *(Correction [2026-10-31 review]: this bullet originally credited the
+  stale-file facts to the data.htm page; the facts are true — re-verified
+  against `ie_data.xls` itself — but the page's linked file is a
+  different, newer one, so the citation is re-pointed to the actual
+  file.)*
 
 The data page's own description (fetched 2026-10-31): the dataset is
 "monthly stock price, dividends, and earnings data and interest rates and
@@ -113,8 +123,12 @@ exists. Shiller's file carries **no T-bill column** (columns inspected:
 only the long rate), so a separate cash series is needed. MeasuringWorth's
 interest-rate documentation describes a U.S. short-term series "available
 from 1831-present," commercial paper to 1930 and Treasury bills after.
-*(confidence: medium — claim taken from that page's search-result text;
-the page itself was not fetched on 2026-10-31.)*
+*(Confidence upgraded to high in the 2026-10-31 review: the page was
+unfetchable at compile time and this rested on search-result text; the
+review session fetched the page directly and the reading matches —
+"available from 1831-present," "From 1831-1930, it was in the form of a
+commercial paper. From 1931-present, it is in the form of a treasurer
+bill." [sic].)*
 
 ## Annual cross-check datasets (not backtest drivers)
 
@@ -128,12 +142,20 @@ the page itself was not fetched on 2026-10-31.)*
 - **Jordà–Schularick–Taylor Macrohistory Database** (macrohistory.net).
   Its download page describes release R.6: "the data now covers 18 advanced
   economies since 1870 on an annual basis," including "long-term returns on
-  housing, equities, bonds and bills." *(confidence: medium — that site did
-  not resolve from our machine on 2026-10-31; the quoted text came via
-  search-result content.)*
+  housing, equities, bonds and bills." *(Confidence upgraded to high in the
+  2026-10-31 review: the site was unfetchable at compile time and this
+  rested on search-result text; the review session fetched the download
+  page directly and both quotes matched verbatim.)*
 
-Both are **annual** and their papers' windows end in 2015 — right answer
-for cross-checking a monthly backtest year by year, wrong shape to drive it.
+Both are **annual** — right answer for cross-checking a monthly backtest
+year by year, wrong shape to drive it. The RRoE paper's window explicitly
+ends in 2015 (its abstract says so); the macrohistory download page states
+its coverage start ("since 1870") but nowhere states an end year, so the
+JST data's own end date is unknown from our sources.
+*(Correction [2026-10-31 review]: this passage earlier said "their papers'
+windows end in 2015" for both datasets; the 2015 end greps only in the
+RRoE abstract, not in any macrohistory page we fetched, so the claim is
+scoped to what the sources state.)*
 
 ## Other options evaluated
 
@@ -155,7 +177,7 @@ for cross-checking a monthly backtest year by year, wrong shape to drive it.
 | Monthly stock leg, 1871+ | Shiller file, `(P + D/12)/P − 1` | Only free monthly series this deep |
 | Monthly bond leg, 1871+ | Shiller "Monthly Total Bond Returns" | Verified synthetic 10-yr Treasury; know what it is |
 | Current months (2025+) | Shiller live file (to Oct 2026 as of 2026-10-31) | AQR ends May 2025; Shiller still updates |
-| Cash rate, pre-1926 | MeasuringWorth short-rate series | 1831+ documented; medium confidence pending fetch |
+| Cash rate, pre-1926 | MeasuringWorth short-rate series | 1831+ documented (page fetched and quote verified 2026-10-31) |
 | Independent annual cross-check, 1870+ | JST Macrohistory R.6 / RRoE replication data | 16–18 countries, annual total returns |
 | Anything pre-1926 in monthly Damodaran form | Doesn't exist — don't try | Damodaran starts 1928 |
 
@@ -174,8 +196,11 @@ for cross-checking a monthly backtest year by year, wrong shape to drive it.
 - **Date column gotcha**: dates are stored as decimal `YYYY.MM` numbers and
   Excel drops trailing zeros — October 2026 prints as `2026.1`. Parse with
   `year = int(x)`, `month = round((x − year) × 100)`; never by eyeball.
-- MeasuringWorth cash-rate and macrohistory.net claims rest on
-  search-result text, not direct fetches (both marked medium above).
+- MeasuringWorth cash-rate and macrohistory.net claims rested on
+  search-result text at compile time; the review fetch of 2026-10-31
+  verified both pages directly (quotes verbatim, confidence upgraded
+  above). The macrohistory database's own end year, however, remains
+  unstated by its download page (see annual cross-checks).
 
 ## See also
 
