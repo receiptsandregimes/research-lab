@@ -1,1 +1,16 @@
 .pi/
+
+# Source files never get published here (copyright + repo weight). The wiki
+# keeps the registry row, the URL, and the compiled page; the file itself stays
+# outside this repo.
+*.pdf
+
+llm-wiki/**/*.png
+llm-wiki/**/*.jpg
+llm-wiki/**/*.jpeg
+llm-wiki/**/*.gif
+llm-wiki/**/*.zip
+llm-wiki/**/*.xls
+llm-wiki/**/*.xlsx
+llm-wiki/**/*.csv
+llm-wiki/**/*.parquet
