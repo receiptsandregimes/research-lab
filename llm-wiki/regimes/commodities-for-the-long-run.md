@@ -252,3 +252,4 @@ not be doing the same job in a stagflation allocation.
 - [Asset Performance by Growth × Inflation Quadrant](asset-performance-by-quadrant.md) — the quadrant table this evidence backs, and Man Group's regime tests
 - [The Growth × Inflation Four-Quadrant Framework](growth-inflation-quadrants.md) — the state definitions the paper's inflation/growth flags roughly match
 - [When Bonds Fail, What To Own Instead](when-bonds-fail.md) — the inflation quadrants through the bond lens; commodities as the alternative shield
+- [Long-Horizon Stock & Bond Datasets for the 60/40 Legs (U.S., 1871–Present)](long-horizon-stock-bond-datasets.md) — the verified stock/bond pairing for backtests on this basket

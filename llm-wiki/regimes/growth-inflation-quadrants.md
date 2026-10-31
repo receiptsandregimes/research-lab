@@ -150,3 +150,5 @@ percentage points, not wholesale rotations.
   synthesis: the inflation quadrants through the bond lens
 - [Commodities for the Long Run (AQR, 1877–2015)](commodities-for-the-long-run.md) —
   the 139-year inflation/growth state table behind the hot quadrants
+- [Long-Horizon Stock & Bond Datasets for the 60/40 Legs (U.S., 1871–Present)](long-horizon-stock-bond-datasets.md) —
+  the verified monthly data pairing for testing this framework's asset claims

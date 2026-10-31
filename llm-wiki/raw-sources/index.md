@@ -21,6 +21,16 @@ material we may redistribute is copied here.
 | https://doi.org/10.2469/faj.v74.n2.4 | levine-ooi-richardson-sasseville-2018-faj | regimes |
 | https://www.aqr.com/Insights/Datasets/Commodities-for-the-Long-Run-Index-Level-Data-Monthly | aqr-commodities-long-run-data-monthly | regimes |
 | https://www.aqr.com/Insights/Datasets/Commodities-for-the-Long-Run-Original-Paper-Data | aqr-commodities-long-run-data-original | regimes |
+| https://shillerdata.com/ | shiller-online-data | regimes |
+| http://www.econ.yale.edu/~shiller/data.htm | shiller-ie-data-yale-mirror | regimes |
+| https://fred.stlouisfed.org/data/gs10 | fred-gs10-table | regimes |
+| https://fred.stlouisfed.org/series/GS10 | fred-gs10-series | regimes |
+| https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histret.html | damodaran-histret-1928 | regimes |
+| https://www.measuringworth.com/datasets/ | measuringworth-datasets | regimes |
+| https://measuringworth.com/datasets/interestrates/sources2.php | measuringworth-interest-sources | regimes |
+| https://www.nber.org/papers/w24112 | jordà-etal-2019-rroe-nber | regimes |
+| https://doi.org/10.7910/DVN/GGDQJ | rroe-replication-dataverse | regimes |
+| https://www.macrohistory.net/database/ | jst-macrohistory-db | regimes |
 
 ## transcripts/
 *(none)*

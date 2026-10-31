@@ -156,3 +156,46 @@ changed and why, not file diffs.
   anchor is unambiguous under both anchor-slug conventions.
 - Lint: 0 issues across the 4 compiled pages (frontmatter, links, anchors,
   index sync, See-also bidirectionality, Contents block, redaction sweep).
+
+## [2026-10-31] register | Long-horizon stock & bond datasets (11 sources)
+- Registered under papers/ (dataset-page precedent set by the AQR rows):
+  shiller-online-data, shiller-ie-data-yale-mirror, fred-gs10-table,
+  fred-gs10-series, damodaran-histret-1928, measuringworth-datasets,
+  measuringworth-interest-sources, jordà-etal-2019-rroe-nber,
+  rroe-replication-dataverse, jst-macrohistory-db.
+- Fetch status: shillerdata.com page + live ie_data.xls, Yale-mirror
+  ie_data.xls, NBER w24112 page, Damodaran histret.html, MeasuringWorth
+  /datasets/ — all fetched directly 2026-10-31. FRED (both pages),
+  macrohistory.net, Harvard Dataverse (DOI), and MeasuringWorth
+  interest-rates sources2.php — not fetchable from this machine (DNS/
+  refused); claims from those four rest on same-day search-result text
+  and are marked medium confidence on the page.
+
+## [2026-10-31] ingest | Long-Horizon Stock & Bond Datasets for the 60/40 Legs
+- Compiled regimes/long-horizon-stock-bond-datasets.md (reference,
+  confidence: high) as the pairing answer for backtests on the AQR
+  equal-weight basket: Shiller's monthly file (Jan 1871–Oct 2026, 1,870
+  gapless rows) as stock + bond legs; Jordà/Schularick/Taylor annual
+  datasets as cross-checks; Damodaran rejected (1928+, annual).
+- Verified by primary file inspection, not prose: coverage and gaps
+  counted from the date column; the bond column re-derived from the
+  file's own rate column (par 10-yr Treasury, coupon = month-t yield,
+  1-month hold, marked at month t+1 with 119 periods left) with max
+  difference 1.6e-15 over all 1,869 populated months; Sept-2026 rate
+  4.99 cross-matched against FRED's GS10 page; Yale mirror file shown
+  stale (properties saved 2023-09-17, data ends 2023.09).
+- Correction of record: an interim claim in the working conversation
+  said the official 10-year series starts 1962; FRED's GS10 table page
+  says "Date Range 1953-04-01 to 2026-09-01". The page carries 1953.
+- Not verified (said so on the page): what the AQR paper itself used
+  for its bond benchmark; the construction of Shiller's pre-1953 rate
+  stand-in; paid databases (none cited in our sources).
+- Self-check (same session): all quoted spans re-grepped against the
+  fetched/searched texts; two fixes made in place pre-commit — (a) the
+  FRED series title had been truncated inside quotation marks, restored
+  verbatim; (b) the "Sep 2026: 4.99" claim was cited to the FRED table
+  page but appears on the series page — series page registered and the
+  citation retargeted. Link/anchor/slug/bidirectionality lint: 0 issues.
+- Updated: regimes/commodities-for-the-long-run.md (See also),
+  regimes/when-bonds-fail.md (See also),
+  regimes/growth-inflation-quadrants.md (See also), index.md.
